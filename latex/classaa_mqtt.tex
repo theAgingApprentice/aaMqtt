@@ -1,0 +1,191 @@
+\hypertarget{classaa_mqtt}{}\doxysection{aa\+Mqtt Class Reference}
+\label{classaa_mqtt}\index{aaMqtt@{aaMqtt}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaa_mqtt_a8fe0df533de2e25f1dfb2f0c8e626f7d}{aa\+Mqtt}} ()
+\item 
+\mbox{\hyperlink{classaa_mqtt_a87e8a4db1a43fbd5d71b77a56a15b7e0}{$\sim$aa\+Mqtt}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classaa_mqtt_ac8db96cc2432919e7fd4d39f2dc93ecd}{connect}} (IPAddress address, const char $\ast$unique\+Name)
+\begin{DoxyCompactList}\small\item\em Connect to MQTT broker. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classaa_mqtt_a47031fdc438dc4adc12f5a358e12973f}{on\+Mqtt\+Connect}} (bool session\+Present)
+\begin{DoxyCompactList}\small\item\em Event handler for connecting to the broker. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classaa_mqtt_a1c81ac79826ee262735b3d25dc382eac}{on\+Mqtt\+Disconnect}} (Async\+Mqtt\+Client\+Disconnect\+Reason reason)
+\begin{DoxyCompactList}\small\item\em Event handler for disconnecting from the broker. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classaa_mqtt_a9b378e761dc885afb5a06ba9511a3a5d}{on\+Mqtt\+Subscribe}} (uint16\+\_\+t packet\+Id, uint8\+\_\+t qos)
+\begin{DoxyCompactList}\small\item\em Event handler for subscribing to a topic on the broker. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classaa_mqtt_aa9b40268ff3129e4cc724f9bbd5533f0}{on\+Mqtt\+Unsubscribe}} (uint16\+\_\+t packet\+Id)
+\begin{DoxyCompactList}\small\item\em Event handler for subscribing to a topic on the broker. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classaa_mqtt_a5434d7d421fe2ad76c8fe39325f28503}{publish\+MQTT}} (const char $\ast$topic, const char $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Publishes a message to the MQTT server. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classaa_mqtt_a75dbff2495235d44ebca911e7ad86dfd}{publish\+Event}} (int evt\+Id, int evt\+Sev, String evt\+Msg)
+\begin{DoxyCompactList}\small\item\em Publishes an event. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classaa_mqtt_aa615f1596373bf2e69558b9ca5c6b5a3}{on\+Mqtt\+Message}} (char $\ast$topic, char $\ast$payload, \mbox{\hyperlink{struct_async_mqtt_client_message_properties}{Async\+Mqtt\+Client\+Message\+Properties}} properties, size\+\_\+t len, size\+\_\+t index, size\+\_\+t total)
+\begin{DoxyCompactList}\small\item\em Event handler for recieving a message from a subscribed topic. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classaa_mqtt_ac3f1827f2ff4c5c05027aace576af3ee}{on\+Mqtt\+Publish}} (uint16\+\_\+t packet\+Id)
+\begin{DoxyCompactList}\small\item\em Event handler for the ACK from a published message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classaa_mqtt_a8fe0df533de2e25f1dfb2f0c8e626f7d}\label{classaa_mqtt_a8fe0df533de2e25f1dfb2f0c8e626f7d}} 
+\index{aaMqtt@{aaMqtt}!aaMqtt@{aaMqtt}}
+\index{aaMqtt@{aaMqtt}!aaMqtt@{aaMqtt}}
+\doxysubsubsection{\texorpdfstring{aaMqtt()}{aaMqtt()}}
+{\footnotesize\ttfamily aa\+Mqtt\+::aa\+Mqtt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classaa_mqtt_autotoc_md60}{}\doxysubsection{@class Write variables to flash memory.}\label{classaa_mqtt_autotoc_md60}
+\mbox{\Hypertarget{classaa_mqtt_a87e8a4db1a43fbd5d71b77a56a15b7e0}\label{classaa_mqtt_a87e8a4db1a43fbd5d71b77a56a15b7e0}} 
+\index{aaMqtt@{aaMqtt}!````~aaMqtt@{$\sim$aaMqtt}}
+\index{````~aaMqtt@{$\sim$aaMqtt}!aaMqtt@{aaMqtt}}
+\doxysubsubsection{\texorpdfstring{$\sim$aaMqtt()}{~aaMqtt()}}
+{\footnotesize\ttfamily aa\+Mqtt\+::$\sim$aa\+Mqtt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classaa_mqtt_autotoc_md61}{}\doxysubsection{@brief This is the destructor for this class.}\label{classaa_mqtt_autotoc_md61}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classaa_mqtt_ac8db96cc2432919e7fd4d39f2dc93ecd}\label{classaa_mqtt_ac8db96cc2432919e7fd4d39f2dc93ecd}} 
+\index{aaMqtt@{aaMqtt}!connect@{connect}}
+\index{connect@{connect}!aaMqtt@{aaMqtt}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily static void aa\+Mqtt\+::connect (\begin{DoxyParamCaption}\item[{IPAddress}]{address,  }\item[{const char $\ast$}]{unique\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Connect to MQTT broker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IPAddress} & IP address of the MQTT broker. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classaa_mqtt_autotoc_md62}{}\doxysubsection{@param char$\ast$ Unique name used to prefix all topic trees.}\label{classaa_mqtt_autotoc_md62}
+\mbox{\Hypertarget{classaa_mqtt_a47031fdc438dc4adc12f5a358e12973f}\label{classaa_mqtt_a47031fdc438dc4adc12f5a358e12973f}} 
+\index{aaMqtt@{aaMqtt}!onMqttConnect@{onMqttConnect}}
+\index{onMqttConnect@{onMqttConnect}!aaMqtt@{aaMqtt}}
+\doxysubsubsection{\texorpdfstring{onMqttConnect()}{onMqttConnect()}}
+{\footnotesize\ttfamily static void aa\+Mqtt\+::on\+Mqtt\+Connect (\begin{DoxyParamCaption}\item[{bool}]{session\+Present }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Event handler for connecting to the broker. 
+
+\hypertarget{classaa_mqtt_autotoc_md63}{}\doxysubsection{@param bool  Check to see if there are messages queued already.}\label{classaa_mqtt_autotoc_md63}
+\mbox{\Hypertarget{classaa_mqtt_a1c81ac79826ee262735b3d25dc382eac}\label{classaa_mqtt_a1c81ac79826ee262735b3d25dc382eac}} 
+\index{aaMqtt@{aaMqtt}!onMqttDisconnect@{onMqttDisconnect}}
+\index{onMqttDisconnect@{onMqttDisconnect}!aaMqtt@{aaMqtt}}
+\doxysubsubsection{\texorpdfstring{onMqttDisconnect()}{onMqttDisconnect()}}
+{\footnotesize\ttfamily static void aa\+Mqtt\+::on\+Mqtt\+Disconnect (\begin{DoxyParamCaption}\item[{Async\+Mqtt\+Client\+Disconnect\+Reason}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Event handler for disconnecting from the broker. 
+
+\hypertarget{classaa_mqtt_autotoc_md64}{}\doxysubsection{@param Async\+Mqtt\+Client\+Disconnect\+Reason Reason code.}\label{classaa_mqtt_autotoc_md64}
+\mbox{\Hypertarget{classaa_mqtt_aa615f1596373bf2e69558b9ca5c6b5a3}\label{classaa_mqtt_aa615f1596373bf2e69558b9ca5c6b5a3}} 
+\index{aaMqtt@{aaMqtt}!onMqttMessage@{onMqttMessage}}
+\index{onMqttMessage@{onMqttMessage}!aaMqtt@{aaMqtt}}
+\doxysubsubsection{\texorpdfstring{onMqttMessage()}{onMqttMessage()}}
+{\footnotesize\ttfamily static void aa\+Mqtt\+::on\+Mqtt\+Message (\begin{DoxyParamCaption}\item[{char $\ast$}]{topic,  }\item[{char $\ast$}]{payload,  }\item[{\mbox{\hyperlink{struct_async_mqtt_client_message_properties}{Async\+Mqtt\+Client\+Message\+Properties}}}]{properties,  }\item[{size\+\_\+t}]{len,  }\item[{size\+\_\+t}]{index,  }\item[{size\+\_\+t}]{total }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Event handler for recieving a message from a subscribed topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & Topic message pertains to. ~\newline
+ \\
+\hline
+{\em char$\ast$} & Message payload. \\
+\hline
+{\em \mbox{\hyperlink{struct_async_mqtt_client_message_properties}{Async\+Mqtt\+Client\+Message\+Properties}}} & Message properties. \\
+\hline
+{\em size\+\_\+t} & Length of message payload. \\
+\hline
+{\em size\+\_\+t} & Message index. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classaa_mqtt_autotoc_md69}{}\doxysubsection{@param size\+\_\+t Total length of message.}\label{classaa_mqtt_autotoc_md69}
+\mbox{\Hypertarget{classaa_mqtt_ac3f1827f2ff4c5c05027aace576af3ee}\label{classaa_mqtt_ac3f1827f2ff4c5c05027aace576af3ee}} 
+\index{aaMqtt@{aaMqtt}!onMqttPublish@{onMqttPublish}}
+\index{onMqttPublish@{onMqttPublish}!aaMqtt@{aaMqtt}}
+\doxysubsubsection{\texorpdfstring{onMqttPublish()}{onMqttPublish()}}
+{\footnotesize\ttfamily static void aa\+Mqtt\+::on\+Mqtt\+Publish (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{packet\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Event handler for the ACK from a published message. 
+
+\hypertarget{classaa_mqtt_autotoc_md70}{}\doxysubsection{@param uint16\+\_\+t Packet Id of message that was published.}\label{classaa_mqtt_autotoc_md70}
+\mbox{\Hypertarget{classaa_mqtt_a9b378e761dc885afb5a06ba9511a3a5d}\label{classaa_mqtt_a9b378e761dc885afb5a06ba9511a3a5d}} 
+\index{aaMqtt@{aaMqtt}!onMqttSubscribe@{onMqttSubscribe}}
+\index{onMqttSubscribe@{onMqttSubscribe}!aaMqtt@{aaMqtt}}
+\doxysubsubsection{\texorpdfstring{onMqttSubscribe()}{onMqttSubscribe()}}
+{\footnotesize\ttfamily static void aa\+Mqtt\+::on\+Mqtt\+Subscribe (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{packet\+Id,  }\item[{uint8\+\_\+t}]{qos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Event handler for subscribing to a topic on the broker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & Pack\+ID that matches the subscription request. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classaa_mqtt_autotoc_md65}{}\doxysubsection{@param uint8\+\_\+t Qulaity Of Service level for this subscription.}\label{classaa_mqtt_autotoc_md65}
+\mbox{\Hypertarget{classaa_mqtt_aa9b40268ff3129e4cc724f9bbd5533f0}\label{classaa_mqtt_aa9b40268ff3129e4cc724f9bbd5533f0}} 
+\index{aaMqtt@{aaMqtt}!onMqttUnsubscribe@{onMqttUnsubscribe}}
+\index{onMqttUnsubscribe@{onMqttUnsubscribe}!aaMqtt@{aaMqtt}}
+\doxysubsubsection{\texorpdfstring{onMqttUnsubscribe()}{onMqttUnsubscribe()}}
+{\footnotesize\ttfamily static void aa\+Mqtt\+::on\+Mqtt\+Unsubscribe (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{packet\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Event handler for subscribing to a topic on the broker. 
+
+\hypertarget{classaa_mqtt_autotoc_md66}{}\doxysubsection{@param uint16\+\_\+t Pack\+ID that matches the unsubscribe request.}\label{classaa_mqtt_autotoc_md66}
+\mbox{\Hypertarget{classaa_mqtt_a75dbff2495235d44ebca911e7ad86dfd}\label{classaa_mqtt_a75dbff2495235d44ebca911e7ad86dfd}} 
+\index{aaMqtt@{aaMqtt}!publishEvent@{publishEvent}}
+\index{publishEvent@{publishEvent}!aaMqtt@{aaMqtt}}
+\doxysubsubsection{\texorpdfstring{publishEvent()}{publishEvent()}}
+{\footnotesize\ttfamily static void aa\+Mqtt\+::publish\+Event (\begin{DoxyParamCaption}\item[{int}]{evt\+Id,  }\item[{int}]{evt\+Sev,  }\item[{String}]{evt\+Msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Publishes an event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & Event ID. \\
+\hline
+{\em int} & Event severity. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classaa_mqtt_autotoc_md68}{}\doxysubsection{@param String Event message.}\label{classaa_mqtt_autotoc_md68}
+\mbox{\Hypertarget{classaa_mqtt_a5434d7d421fe2ad76c8fe39325f28503}\label{classaa_mqtt_a5434d7d421fe2ad76c8fe39325f28503}} 
+\index{aaMqtt@{aaMqtt}!publishMQTT@{publishMQTT}}
+\index{publishMQTT@{publishMQTT}!aaMqtt@{aaMqtt}}
+\doxysubsubsection{\texorpdfstring{publishMQTT()}{publishMQTT()}}
+{\footnotesize\ttfamily static bool aa\+Mqtt\+::publish\+MQTT (\begin{DoxyParamCaption}\item[{const char $\ast$}]{topic,  }\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Publishes a message to the MQTT server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & Topic to pubished to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classaa_mqtt_autotoc_md67}{}\doxysubsection{@param char$\ast$ Message  to publish.}\label{classaa_mqtt_autotoc_md67}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/aa\+Mqtt.\+h\item 
+src/aa\+Mqtt.\+cpp\end{DoxyCompactItemize}

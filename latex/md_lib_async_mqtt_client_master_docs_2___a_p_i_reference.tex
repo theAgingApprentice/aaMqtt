@@ -1,0 +1,147 @@
+\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md9}{}\doxysubsubsection{Async\+Mqtt\+Client()}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md9}
+Instantiate a new \mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} object.\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md10}{}\doxysubsection{Configuration}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md10}
+\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md11}{}\doxysubsubsection{Async\+Mqtt\+Client\& set\+Keep\+Alive(uint16\+\_\+t $<$tt$>$keep\+Alive$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md11}
+Set the keep alive. Defaults to 15 seconds.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily keep\+Alive}$\ast$$\ast$\+: Keep alive in seconds
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md12}{}\doxysubsubsection{Async\+Mqtt\+Client\& set\+Client\+Id(const char$\ast$ $<$tt$>$client\+Id$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md12}
+Set the client ID. Defaults to {\ttfamily esp8266$<$chip ID on 6 hex caracters$>$}.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily client\+Id}$\ast$$\ast$\+: Client ID
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md13}{}\doxysubsubsection{Async\+Mqtt\+Client\& set\+Clean\+Session(bool $<$tt$>$clean\+Session$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md13}
+Whether or not to set the Clean\+Session flag. Defaults to {\ttfamily true}.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily clean\+Session}$\ast$$\ast$\+: clean session wanted or not
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md14}{}\doxysubsubsection{Async\+Mqtt\+Client\& set\+Max\+Topic\+Length(uint16\+\_\+t $<$tt$>$max\+Topic\+Length$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md14}
+Set the maximum allowed topic length to receive. If an MQTT packet is received with a topic longer than this maximum, the packet will be ignored. Defaults to {\ttfamily 128}.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily max\+Topic\+Length}$\ast$$\ast$\+: Maximum allowed topic length to receive
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md15}{}\doxysubsubsection{Async\+Mqtt\+Client\& set\+Credentials(const char$\ast$ $<$tt$>$username$<$/tt$>$, const char$\ast$ $<$tt$>$password$<$/tt$>$ = nullptr)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md15}
+Set the username/password. Defaults to non-\/auth.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily username}$\ast$$\ast$\+: Username
+\item $\ast$$\ast${\ttfamily password}$\ast$$\ast$\+: Password
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md16}{}\doxysubsubsection{Async\+Mqtt\+Client\& set\+Will(const char$\ast$ $<$tt$>$topic$<$/tt$>$, uint8\+\_\+t $<$tt$>$qos$<$/tt$>$, bool $<$tt$>$retain$<$/tt$>$, const char$\ast$ $<$tt$>$payload$<$/tt$>$ = nullptr, size\+\_\+t $<$tt$>$length$<$/tt$>$ = 0)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md16}
+Set the Last Will Testament. Defaults to none.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily topic}$\ast$$\ast$\+: Topic of the LWT
+\item $\ast$$\ast${\ttfamily qos}$\ast$$\ast$\+: QoS of the LWT
+\item $\ast$$\ast${\ttfamily retain}$\ast$$\ast$\+: Retain flag of the LWT
+\item $\ast$$\ast${\ttfamily payload}$\ast$$\ast$\+: Payload of the LWT. If unset, the payload will be empty
+\item $\ast$$\ast${\ttfamily length}$\ast$$\ast$\+: Payload length. If unset or set to 0, the payload will be considered as a string and its size will be calculated using {\ttfamily strlen(payload)}
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md17}{}\doxysubsubsection{Async\+Mqtt\+Client\& set\+Server(\+IPAddress $<$tt$>$ip$<$/tt$>$, uint16\+\_\+t $<$tt$>$port$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md17}
+Set the server.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily ip}$\ast$$\ast$\+: IP of the server
+\item $\ast$$\ast${\ttfamily port}$\ast$$\ast$\+: Port of the server
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md18}{}\doxysubsubsection{Async\+Mqtt\+Client\& set\+Server(const char$\ast$ $<$tt$>$host$<$/tt$>$, uint16\+\_\+t $<$tt$>$port$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md18}
+Set the server.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily host}$\ast$$\ast$\+: Host of the server
+\item $\ast$$\ast${\ttfamily port}$\ast$$\ast$\+: Port of the server
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md19}{}\doxysubsubsection{Async\+Mqtt\+Client\& set\+Secure(bool $<$tt$>$secure$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md19}
+Whether or not to use SSL. Defaults to {\ttfamily false}.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily secure}$\ast$$\ast$\+: SSL wanted or not.
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md20}{}\doxysubsubsection{Async\+Mqtt\+Client\& add\+Server\+Fingerprint(const uint8\+\_\+t$\ast$ $<$tt$>$fingerprint$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md20}
+Adds an acceptable server fingerprint (SHA1). This may be called multiple times to permit any one of the specified fingerprints. By default, if no fingerprint is added, any fingerprint is accepted.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily fingerprint}$\ast$$\ast$\+: Fingerprint to add
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md21}{}\doxysubsection{Events handlers}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md21}
+\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md22}{}\doxysubsubsection{Async\+Mqtt\+Client\& on\+Connect(\+Async\+Mqtt\+Client\+Internals\+::\+On\+Connect\+User\+Callback $<$tt$>$callback$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md22}
+Add a connect event handler.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily callback}$\ast$$\ast$\+: Function to call
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md23}{}\doxysubsubsection{Async\+Mqtt\+Client\& on\+Disconnect(\+Async\+Mqtt\+Client\+Internals\+::\+On\+Disconnect\+User\+Callback $<$tt$>$callback$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md23}
+Add a disconnect event handler.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily callback}$\ast$$\ast$\+: Function to call
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md24}{}\doxysubsubsection{Async\+Mqtt\+Client\& on\+Subscribe(\+Async\+Mqtt\+Client\+Internals\+::\+On\+Subscribe\+User\+Callback $<$tt$>$callback$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md24}
+Add a subscribe acknowledged event handler.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily callback}$\ast$$\ast$\+: Function to call
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md25}{}\doxysubsubsection{Async\+Mqtt\+Client\& on\+Unsubscribe(\+Async\+Mqtt\+Client\+Internals\+::\+On\+Unsubscribe\+User\+Callback $<$tt$>$callback$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md25}
+Add an unsubscribe acknowledged event handler.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily callback}$\ast$$\ast$\+: Function to call
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md26}{}\doxysubsubsection{Async\+Mqtt\+Client\& on\+Message(\+Async\+Mqtt\+Client\+Internals\+::\+On\+Message\+User\+Callback $<$tt$>$callback$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md26}
+Add a publish received event handler.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily callback}$\ast$$\ast$\+: Function to call
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md27}{}\doxysubsubsection{Async\+Mqtt\+Client\& on\+Publish(\+Async\+Mqtt\+Client\+Internals\+::\+On\+Publish\+User\+Callback $<$tt$>$callback$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md27}
+Add a publish acknowledged event handler.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily callback}$\ast$$\ast$\+: Function to call
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md28}{}\doxysubsection{Operation functions}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md28}
+\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md29}{}\doxysubsubsection{bool connected()}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md29}
+Return if the client is currently connected to the broker or not.\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md30}{}\doxysubsubsection{void connect()}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md30}
+Connect to the server.\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md31}{}\doxysubsubsection{void disconnect(bool $<$tt$>$force$<$/tt$>$ = false)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md31}
+Disconnect from the server.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily force}$\ast$$\ast$\+: Whether to force the disconnection. Defaults to {\ttfamily false} (clean disconnection).
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md32}{}\doxysubsubsection{uint16\+\_\+t subscribe(const char$\ast$ $<$tt$>$topic$<$/tt$>$, uint8\+\_\+t $<$tt$>$qos$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md32}
+Subscribe to the given topic at the given QoS.
+
+Return the packet ID or 0 if failed.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily topic}$\ast$$\ast$\+: Topic
+\item $\ast$$\ast${\ttfamily qos}$\ast$$\ast$\+: QoS
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md33}{}\doxysubsubsection{uint16\+\_\+t unsubscribe(const char$\ast$ $<$tt$>$topic$<$/tt$>$)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md33}
+Unsubscribe from the given topic.
+
+Return the packet ID or 0 if failed.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily topic}$\ast$$\ast$\+: Topic
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md34}{}\doxysubsubsection{uint16\+\_\+t publish(const char$\ast$ $<$tt$>$topic$<$/tt$>$, uint8\+\_\+t $<$tt$>$qos$<$/tt$>$, bool $<$tt$>$retain$<$/tt$>$, const char$\ast$ $<$tt$>$payload$<$/tt$>$ = nullptr, size\+\_\+t $<$tt$>$length$<$/tt$>$ = 0, bool dup = false, uint16\+\_\+t message\+\_\+id = 0)}\label{md_lib_async_mqtt_client_master_docs_2___a_p_i_reference_autotoc_md34}
+Publish a packet.
+
+Return the packet ID (or 1 if QoS 0) or 0 if failed.
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast${\ttfamily topic}$\ast$$\ast$\+: Topic
+\item $\ast$$\ast${\ttfamily qos}$\ast$$\ast$\+: QoS
+\item $\ast$$\ast${\ttfamily retain}$\ast$$\ast$\+: Retain flag
+\item $\ast$$\ast${\ttfamily payload}$\ast$$\ast$\+: Payload. If unset, the payload will be empty
+\item $\ast$$\ast${\ttfamily length}$\ast$$\ast$\+: Payload length. If unset or set to 0, the payload will be considered as a string and its size will be calculated using {\ttfamily strlen(payload)}
+\item $\ast$$\ast${\ttfamily dup}$\ast$$\ast$\+: Duplicate flag. If set or set to 1, the payload will be flagged as a duplicate
+\item $\ast$$\ast${\ttfamily message\+\_\+id}$\ast$$\ast$\+: The message ID. If unset or set to 0, the message ID will be automtaically assigned. Use this with the DUP flag to identify which message is being duplicated 
+\end{DoxyItemize}

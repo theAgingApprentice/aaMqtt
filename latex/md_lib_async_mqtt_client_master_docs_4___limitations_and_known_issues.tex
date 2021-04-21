@@ -1,0 +1,26 @@
+
+\begin{DoxyItemize}
+\item When the Clean\+Session is set to {\ttfamily false}, the implementation is not spec compliant. The following is not honored\+:
+\end{DoxyItemize}
+
+\begin{quote}
+Must be kept in memory\+: \end{quote}
+$\ast$ All messages in a QoS 1 or 2 flow, which are not confirmed by the broker
+\begin{DoxyItemize}
+\item All received QoS 2 messages, which are not yet confirmed to the broker
+\end{DoxyItemize}
+
+This means retransmission is not honored in case of a failure.
+
+
+\begin{DoxyItemize}
+\item You cannot send payload larger that what can fit on RAM.
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_4___limitations_and_known_issues_autotoc_md37}{}\doxysection{SSL limitations}\label{md_lib_async_mqtt_client_master_docs_4___limitations_and_known_issues_autotoc_md37}
+
+\begin{DoxyItemize}
+\item SSL requires use of esp8266/\+Arduino 2.\+4.\+0, which is not yet released (platform = espressif8266\+\_\+stage in Platform\+IO).
+\item SSL requires the build flag -\/DASYNC\+\_\+\+TCP\+\_\+\+SSL\+\_\+\+ENABLED=1
+\item SSL only supports fingerprints for server validation.
+\item If you do not specify one or more acceptable server fingerprints, the SSL connection will be vulnerable to man-\/in-\/the-\/middle attacks.
+\item Some server certificate signature algorithms do not work. SHA1, SHA224, SHA256, and MD5 are working. SHA384, and SHA512 will cause a crash. 
+\end{DoxyItemize}

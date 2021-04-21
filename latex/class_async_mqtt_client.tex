@@ -1,0 +1,74 @@
+\hypertarget{class_async_mqtt_client}{}\doxysection{Async\+Mqtt\+Client Class Reference}
+\label{class_async_mqtt_client}\index{AsyncMqttClient@{AsyncMqttClient}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_acca0dbaaad02e96ed45c0297bdf736b3}\label{class_async_mqtt_client_acca0dbaaad02e96ed45c0297bdf736b3}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries set\+Keep\+Alive} (uint16\+\_\+t keep\+Alive)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_a81b0029945ffb10251d4d8f0fe0b1621}\label{class_async_mqtt_client_a81b0029945ffb10251d4d8f0fe0b1621}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries set\+Client\+Id} (const char $\ast$client\+Id)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_a04431d5f88fa2f6eb82def3d15abc144}\label{class_async_mqtt_client_a04431d5f88fa2f6eb82def3d15abc144}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries set\+Clean\+Session} (bool clean\+Session)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_ad891cf77a9b72ac64deb262243c94fdf}\label{class_async_mqtt_client_ad891cf77a9b72ac64deb262243c94fdf}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries set\+Max\+Topic\+Length} (uint16\+\_\+t max\+Topic\+Length)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_a5d14aaaee1b8e45cf1c4963f7d21335a}\label{class_async_mqtt_client_a5d14aaaee1b8e45cf1c4963f7d21335a}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries set\+Credentials} (const char $\ast$username, const char $\ast$password=nullptr)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_a5f74d52ba8ad4e28d08a1b9c1a0a6a62}\label{class_async_mqtt_client_a5f74d52ba8ad4e28d08a1b9c1a0a6a62}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries set\+Will} (const char $\ast$topic, uint8\+\_\+t qos, bool retain, const char $\ast$payload=nullptr, size\+\_\+t length=0)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_a38cef9411f32e092e379182347cbfcbb}\label{class_async_mqtt_client_a38cef9411f32e092e379182347cbfcbb}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries set\+Server} (IPAddress ip, uint16\+\_\+t port)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_a1737bb3421a8a798ff71ed3de05c8d34}\label{class_async_mqtt_client_a1737bb3421a8a798ff71ed3de05c8d34}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries set\+Server} (const char $\ast$host, uint16\+\_\+t port)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_acc70214ae00f43355cadf4b505d8d955}\label{class_async_mqtt_client_acc70214ae00f43355cadf4b505d8d955}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries on\+Connect} (Async\+Mqtt\+Client\+Internals\+::\+On\+Connect\+User\+Callback callback)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_af33eeabc47bc8ca28a16864e3f818e11}\label{class_async_mqtt_client_af33eeabc47bc8ca28a16864e3f818e11}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries on\+Disconnect} (Async\+Mqtt\+Client\+Internals\+::\+On\+Disconnect\+User\+Callback callback)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_a52252b4cc3757a2c725edf23d820b3a1}\label{class_async_mqtt_client_a52252b4cc3757a2c725edf23d820b3a1}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries on\+Subscribe} (Async\+Mqtt\+Client\+Internals\+::\+On\+Subscribe\+User\+Callback callback)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_af9fdc12b076b6c756e5a15fe6fd72f77}\label{class_async_mqtt_client_af9fdc12b076b6c756e5a15fe6fd72f77}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries on\+Unsubscribe} (Async\+Mqtt\+Client\+Internals\+::\+On\+Unsubscribe\+User\+Callback callback)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_abfed358b938ca5aea8ae26f05928e9fd}\label{class_async_mqtt_client_abfed358b938ca5aea8ae26f05928e9fd}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries on\+Message} (Async\+Mqtt\+Client\+Internals\+::\+On\+Message\+User\+Callback callback)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_a99a83cbb7bc7942a586bb822529d12bd}\label{class_async_mqtt_client_a99a83cbb7bc7942a586bb822529d12bd}} 
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} \& {\bfseries on\+Publish} (Async\+Mqtt\+Client\+Internals\+::\+On\+Publish\+User\+Callback callback)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_af3c33aa34a3a1c7440005314819d3d18}\label{class_async_mqtt_client_af3c33aa34a3a1c7440005314819d3d18}} 
+bool {\bfseries connected} () const
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_aef8a53f05ea5f1cd39bea2210a631b7f}\label{class_async_mqtt_client_aef8a53f05ea5f1cd39bea2210a631b7f}} 
+void {\bfseries connect} ()
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_a46263b1d4de8e410662c80699f96988a}\label{class_async_mqtt_client_a46263b1d4de8e410662c80699f96988a}} 
+void {\bfseries disconnect} (bool force=false)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_a51cac30dbe3706c80e5dee0fdfecc642}\label{class_async_mqtt_client_a51cac30dbe3706c80e5dee0fdfecc642}} 
+uint16\+\_\+t {\bfseries subscribe} (const char $\ast$topic, uint8\+\_\+t qos)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_aebfa4f3539dfbc89f620034010351cfe}\label{class_async_mqtt_client_aebfa4f3539dfbc89f620034010351cfe}} 
+uint16\+\_\+t {\bfseries unsubscribe} (const char $\ast$topic)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_a00e81cc4ae42c8f673fb903e8b50c379}\label{class_async_mqtt_client_a00e81cc4ae42c8f673fb903e8b50c379}} 
+uint16\+\_\+t {\bfseries publish} (const char $\ast$topic, uint8\+\_\+t qos, bool retain, const char $\ast$payload=nullptr, size\+\_\+t length=0, bool dup=false, uint16\+\_\+t message\+\_\+id=0)
+\item 
+\mbox{\Hypertarget{class_async_mqtt_client_a687144d7448f01fe08a4678b5f45308e}\label{class_async_mqtt_client_a687144d7448f01fe08a4678b5f45308e}} 
+const char $\ast$ {\bfseries get\+Client\+Id} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/async-\/mqtt-\/client-\/master/src/Async\+Mqtt\+Client.\+hpp\item 
+lib/async-\/mqtt-\/client-\/master/src/Async\+Mqtt\+Client.\+cpp\end{DoxyCompactItemize}
