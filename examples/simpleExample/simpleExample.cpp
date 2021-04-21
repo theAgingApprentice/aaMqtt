@@ -39,12 +39,12 @@
  * IN THE SOFTWARE.  
  *****************************************************************************/ 
 #include <Arduino.h> // Arduino Core for ESP32. Comes with Platform.io.
-#include <aaTemplate.h> // Store values that persist past reboot.
+#include <aaMqtt.h> // Store values that persist past reboot.
 
 /**
  * Define global objects.
  * =================================================================================*/
-aaTemplate myRefVar; // Explain what this object reference is for. 
+aaMqtt myRefVar; // Explain what this object reference is for. 
 
 /**
  * @brief Initialize the serial output with the specified baud rate measured in bits 
