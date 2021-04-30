@@ -1,0 +1,320 @@
+\hypertarget{class_async_client}{}\doxysection{Async\+Client Class Reference}
+\label{class_async_client}\index{AsyncClient@{AsyncClient}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_async_client_aefecfa0c75c8c1b32104115e93739087}\label{class_async_client_aefecfa0c75c8c1b32104115e93739087}} 
+{\bfseries Async\+Client} (tcp\+\_\+pcb $\ast$pcb=0)
+\item 
+\mbox{\Hypertarget{class_async_client_a575c12664279634155259e007c6a104f}\label{class_async_client_a575c12664279634155259e007c6a104f}} 
+\mbox{\hyperlink{class_async_client}{Async\+Client}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_async_client}{Async\+Client}} \&other)
+\item 
+\mbox{\Hypertarget{class_async_client_afaedf716feb9b363fe9b1ee7d82fbe9f}\label{class_async_client_afaedf716feb9b363fe9b1ee7d82fbe9f}} 
+\mbox{\hyperlink{class_async_client}{Async\+Client}} \& {\bfseries operator+=} (const \mbox{\hyperlink{class_async_client}{Async\+Client}} \&other)
+\item 
+\mbox{\Hypertarget{class_async_client_a40d147dfec9bbc2e8891273be25c5f39}\label{class_async_client_a40d147dfec9bbc2e8891273be25c5f39}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_async_client}{Async\+Client}} \&other)
+\item 
+\mbox{\Hypertarget{class_async_client_a44e3b77c5567dbfeb25c50cfddf61653}\label{class_async_client_a44e3b77c5567dbfeb25c50cfddf61653}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_async_client}{Async\+Client}} \&other)
+\item 
+\mbox{\Hypertarget{class_async_client_a09fe240056839985e52b566e7f513d89}\label{class_async_client_a09fe240056839985e52b566e7f513d89}} 
+bool {\bfseries connect} (IPAddress ip, uint16\+\_\+t port)
+\item 
+\mbox{\Hypertarget{class_async_client_a260e075caca9a58241f2fad754cc412b}\label{class_async_client_a260e075caca9a58241f2fad754cc412b}} 
+bool {\bfseries connect} (const char $\ast$host, uint16\+\_\+t port)
+\item 
+\mbox{\Hypertarget{class_async_client_a0305fe0b036257c03829ceaa5cc43361}\label{class_async_client_a0305fe0b036257c03829ceaa5cc43361}} 
+void {\bfseries close} (bool now=false)
+\item 
+\mbox{\Hypertarget{class_async_client_a4bed4e925817d1b918af2ce43fb0859e}\label{class_async_client_a4bed4e925817d1b918af2ce43fb0859e}} 
+void {\bfseries stop} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a09e777ff005d8e0f81166e704dc14979}\label{class_async_client_a09e777ff005d8e0f81166e704dc14979}} 
+int8\+\_\+t {\bfseries abort} ()
+\item 
+\mbox{\Hypertarget{class_async_client_ae2a766b8a238637b56cef0a2eb8ebde2}\label{class_async_client_ae2a766b8a238637b56cef0a2eb8ebde2}} 
+bool {\bfseries free} ()
+\item 
+\mbox{\Hypertarget{class_async_client_acd05c724494c44f7fb5d8f730d026b8e}\label{class_async_client_acd05c724494c44f7fb5d8f730d026b8e}} 
+bool {\bfseries can\+Send} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a039b989cd1e955709e8b90567045fdbb}\label{class_async_client_a039b989cd1e955709e8b90567045fdbb}} 
+size\+\_\+t {\bfseries space} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a7dbadbf7ba142571b6c0ef33785f4292}\label{class_async_client_a7dbadbf7ba142571b6c0ef33785f4292}} 
+size\+\_\+t {\bfseries add} (const char $\ast$data, size\+\_\+t size, uint8\+\_\+t apiflags=ASYNC\+\_\+\+WRITE\+\_\+\+FLAG\+\_\+\+COPY)
+\item 
+\mbox{\Hypertarget{class_async_client_aa2d6f5a753f8928469e0fd1b01116e61}\label{class_async_client_aa2d6f5a753f8928469e0fd1b01116e61}} 
+bool {\bfseries send} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a83b5abb57799a9584f8fccce1d31db8c}\label{class_async_client_a83b5abb57799a9584f8fccce1d31db8c}} 
+size\+\_\+t {\bfseries write} (const char $\ast$data)
+\item 
+\mbox{\Hypertarget{class_async_client_a931061f19c28e3988a1a0554ac8be86a}\label{class_async_client_a931061f19c28e3988a1a0554ac8be86a}} 
+size\+\_\+t {\bfseries write} (const char $\ast$data, size\+\_\+t size, uint8\+\_\+t apiflags=ASYNC\+\_\+\+WRITE\+\_\+\+FLAG\+\_\+\+COPY)
+\item 
+\mbox{\Hypertarget{class_async_client_addf826dceff680e0bb8b830e9050c5ea}\label{class_async_client_addf826dceff680e0bb8b830e9050c5ea}} 
+uint8\+\_\+t {\bfseries state} ()
+\item 
+\mbox{\Hypertarget{class_async_client_afada4e684fccc48d9c5852ccf76336dc}\label{class_async_client_afada4e684fccc48d9c5852ccf76336dc}} 
+bool {\bfseries connecting} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a0cf8997613085c2a961c5df3ca06191e}\label{class_async_client_a0cf8997613085c2a961c5df3ca06191e}} 
+bool {\bfseries connected} ()
+\item 
+\mbox{\Hypertarget{class_async_client_acfb94438cf2cf4a8b63afb7c2b13c52b}\label{class_async_client_acfb94438cf2cf4a8b63afb7c2b13c52b}} 
+bool {\bfseries disconnecting} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a50b8da5a047d60c453a2012a6fbec45b}\label{class_async_client_a50b8da5a047d60c453a2012a6fbec45b}} 
+bool {\bfseries disconnected} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a0054ea6355799005ffef4432afef7f04}\label{class_async_client_a0054ea6355799005ffef4432afef7f04}} 
+bool {\bfseries freeable} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a89f3f5ab8cfe9a8517961c57151b6d37}\label{class_async_client_a89f3f5ab8cfe9a8517961c57151b6d37}} 
+uint16\+\_\+t {\bfseries get\+Mss} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a8c0296b6096bb8fef523314d223dea58}\label{class_async_client_a8c0296b6096bb8fef523314d223dea58}} 
+uint32\+\_\+t {\bfseries get\+Rx\+Timeout} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a815402f77f76a3f21bd8f8e06e7fe1e0}\label{class_async_client_a815402f77f76a3f21bd8f8e06e7fe1e0}} 
+void {\bfseries set\+Rx\+Timeout} (uint32\+\_\+t timeout)
+\item 
+\mbox{\Hypertarget{class_async_client_a1adac1cf7bdaf62f3d3faf35b9e2180c}\label{class_async_client_a1adac1cf7bdaf62f3d3faf35b9e2180c}} 
+uint32\+\_\+t {\bfseries get\+Ack\+Timeout} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a19b12e375acdaad99ec98888771acba0}\label{class_async_client_a19b12e375acdaad99ec98888771acba0}} 
+void {\bfseries set\+Ack\+Timeout} (uint32\+\_\+t timeout)
+\item 
+\mbox{\Hypertarget{class_async_client_af1819edd57b1ce0666a6cd390bcaf587}\label{class_async_client_af1819edd57b1ce0666a6cd390bcaf587}} 
+void {\bfseries set\+No\+Delay} (bool nodelay)
+\item 
+\mbox{\Hypertarget{class_async_client_a697f38860669436aec0a528be655af24}\label{class_async_client_a697f38860669436aec0a528be655af24}} 
+bool {\bfseries get\+No\+Delay} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a33a3750ec50327b97728ddd216402ffd}\label{class_async_client_a33a3750ec50327b97728ddd216402ffd}} 
+uint32\+\_\+t {\bfseries get\+Remote\+Address} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a7691bad32e27126f617e733a49107068}\label{class_async_client_a7691bad32e27126f617e733a49107068}} 
+uint16\+\_\+t {\bfseries get\+Remote\+Port} ()
+\item 
+\mbox{\Hypertarget{class_async_client_ac19ade5e8a6038177f0848719b6c0f7b}\label{class_async_client_ac19ade5e8a6038177f0848719b6c0f7b}} 
+uint32\+\_\+t {\bfseries get\+Local\+Address} ()
+\item 
+\mbox{\Hypertarget{class_async_client_afaf80cfbe7f60ab5a00f696bd7594949}\label{class_async_client_afaf80cfbe7f60ab5a00f696bd7594949}} 
+uint16\+\_\+t {\bfseries get\+Local\+Port} ()
+\item 
+\mbox{\Hypertarget{class_async_client_af3c1c33653e9fea15744a062da459d64}\label{class_async_client_af3c1c33653e9fea15744a062da459d64}} 
+IPAddress {\bfseries remote\+IP} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a213cfa85bf66c232df8aaf0a24987709}\label{class_async_client_a213cfa85bf66c232df8aaf0a24987709}} 
+uint16\+\_\+t {\bfseries remote\+Port} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a180852336eee12fdb270cd9c0156febf}\label{class_async_client_a180852336eee12fdb270cd9c0156febf}} 
+IPAddress {\bfseries local\+IP} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a340a079ff352ef2e9f5b286fdf6642a1}\label{class_async_client_a340a079ff352ef2e9f5b286fdf6642a1}} 
+uint16\+\_\+t {\bfseries local\+Port} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a564be76d386debfaec511881712ec3c1}\label{class_async_client_a564be76d386debfaec511881712ec3c1}} 
+void {\bfseries on\+Connect} (Ac\+Connect\+Handler cb, void $\ast$arg=0)
+\item 
+\mbox{\Hypertarget{class_async_client_a7dfb395e523a2cea1db946fd7cfc9227}\label{class_async_client_a7dfb395e523a2cea1db946fd7cfc9227}} 
+void {\bfseries on\+Disconnect} (Ac\+Connect\+Handler cb, void $\ast$arg=0)
+\item 
+\mbox{\Hypertarget{class_async_client_a2c77cada750c55a704079ed30fd31564}\label{class_async_client_a2c77cada750c55a704079ed30fd31564}} 
+void {\bfseries on\+Ack} (Ac\+Ack\+Handler cb, void $\ast$arg=0)
+\item 
+\mbox{\Hypertarget{class_async_client_ab7d9272f294c69d51170d0ecd172ba8d}\label{class_async_client_ab7d9272f294c69d51170d0ecd172ba8d}} 
+void {\bfseries on\+Error} (Ac\+Error\+Handler cb, void $\ast$arg=0)
+\item 
+\mbox{\Hypertarget{class_async_client_a5d6f6d66de7cc12e1acc8ff3177f8e35}\label{class_async_client_a5d6f6d66de7cc12e1acc8ff3177f8e35}} 
+void {\bfseries on\+Data} (Ac\+Data\+Handler cb, void $\ast$arg=0)
+\item 
+\mbox{\Hypertarget{class_async_client_a0b8c47a61b60aa7b6722595d94053f41}\label{class_async_client_a0b8c47a61b60aa7b6722595d94053f41}} 
+void {\bfseries on\+Packet} (Ac\+Packet\+Handler cb, void $\ast$arg=0)
+\item 
+\mbox{\Hypertarget{class_async_client_a6e1e5550ace13139fbb3e502adc612e5}\label{class_async_client_a6e1e5550ace13139fbb3e502adc612e5}} 
+void {\bfseries on\+Timeout} (Ac\+Timeout\+Handler cb, void $\ast$arg=0)
+\item 
+\mbox{\Hypertarget{class_async_client_a4c39cc61dd4c8a83c8d6c299ca0d7606}\label{class_async_client_a4c39cc61dd4c8a83c8d6c299ca0d7606}} 
+void {\bfseries on\+Poll} (Ac\+Connect\+Handler cb, void $\ast$arg=0)
+\item 
+\mbox{\Hypertarget{class_async_client_aba43fb75a7a60b08f3d3f943e0d1c332}\label{class_async_client_aba43fb75a7a60b08f3d3f943e0d1c332}} 
+void {\bfseries ack\+Packet} (struct pbuf $\ast$pb)
+\item 
+\mbox{\Hypertarget{class_async_client_ac2c939c5af9cb1fb2c693ddb98725ecf}\label{class_async_client_ac2c939c5af9cb1fb2c693ddb98725ecf}} 
+size\+\_\+t {\bfseries ack} (size\+\_\+t len)
+\item 
+\mbox{\Hypertarget{class_async_client_ac8442f3cf5fe576c955e5f2994582f83}\label{class_async_client_ac8442f3cf5fe576c955e5f2994582f83}} 
+void {\bfseries ack\+Later} ()
+\item 
+\mbox{\Hypertarget{class_async_client_acc5c5897b4885b78389a3ece176017c7}\label{class_async_client_acc5c5897b4885b78389a3ece176017c7}} 
+const char $\ast$ {\bfseries error\+To\+String} (int8\+\_\+t error)
+\item 
+\mbox{\Hypertarget{class_async_client_a32ec371fc9b88c8a4532c1ad8748b110}\label{class_async_client_a32ec371fc9b88c8a4532c1ad8748b110}} 
+const char $\ast$ {\bfseries state\+To\+String} ()
+\item 
+\mbox{\Hypertarget{class_async_client_af9a0368be4f98f49f252b1989b84b5a3}\label{class_async_client_af9a0368be4f98f49f252b1989b84b5a3}} 
+int8\+\_\+t {\bfseries \+\_\+recv} (tcp\+\_\+pcb $\ast$pcb, pbuf $\ast$pb, int8\+\_\+t err)
+\item 
+\mbox{\Hypertarget{class_async_client_a7fe7c99cddb4341e7813bc733b6c9081}\label{class_async_client_a7fe7c99cddb4341e7813bc733b6c9081}} 
+tcp\+\_\+pcb $\ast$ {\bfseries pcb} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_async_client_abe187c005c73fe6c0c94e1b3b20b55de}\label{class_async_client_abe187c005c73fe6c0c94e1b3b20b55de}} 
+static int8\+\_\+t {\bfseries \+\_\+s\+\_\+poll} (void $\ast$arg, struct tcp\+\_\+pcb $\ast$tpcb)
+\item 
+\mbox{\Hypertarget{class_async_client_af8136d3085c8948078a131bfb9430ec6}\label{class_async_client_af8136d3085c8948078a131bfb9430ec6}} 
+static int8\+\_\+t {\bfseries \+\_\+s\+\_\+recv} (void $\ast$arg, struct tcp\+\_\+pcb $\ast$tpcb, struct pbuf $\ast$pb, int8\+\_\+t err)
+\item 
+\mbox{\Hypertarget{class_async_client_a6a69c67e1a22660766affb64700c2276}\label{class_async_client_a6a69c67e1a22660766affb64700c2276}} 
+static int8\+\_\+t {\bfseries \+\_\+s\+\_\+fin} (void $\ast$arg, struct tcp\+\_\+pcb $\ast$tpcb, int8\+\_\+t err)
+\item 
+\mbox{\Hypertarget{class_async_client_a485b2be0c01d3172928c0ed9655edc2f}\label{class_async_client_a485b2be0c01d3172928c0ed9655edc2f}} 
+static int8\+\_\+t {\bfseries \+\_\+s\+\_\+lwip\+\_\+fin} (void $\ast$arg, struct tcp\+\_\+pcb $\ast$tpcb, int8\+\_\+t err)
+\item 
+\mbox{\Hypertarget{class_async_client_a9ff634e3b1237eab65178b007326367e}\label{class_async_client_a9ff634e3b1237eab65178b007326367e}} 
+static void {\bfseries \+\_\+s\+\_\+error} (void $\ast$arg, int8\+\_\+t err)
+\item 
+\mbox{\Hypertarget{class_async_client_a8e507d50b4cc3ae8e90f2e1c1ebf5f61}\label{class_async_client_a8e507d50b4cc3ae8e90f2e1c1ebf5f61}} 
+static int8\+\_\+t {\bfseries \+\_\+s\+\_\+sent} (void $\ast$arg, struct tcp\+\_\+pcb $\ast$tpcb, uint16\+\_\+t len)
+\item 
+\mbox{\Hypertarget{class_async_client_a8a0e1ea2a15f0766c4ad9073f5246953}\label{class_async_client_a8a0e1ea2a15f0766c4ad9073f5246953}} 
+static int8\+\_\+t {\bfseries \+\_\+s\+\_\+connected} (void $\ast$arg, void $\ast$tpcb, int8\+\_\+t err)
+\item 
+\mbox{\Hypertarget{class_async_client_a3f629c9072da183879a9c67878b374cc}\label{class_async_client_a3f629c9072da183879a9c67878b374cc}} 
+static void {\bfseries \+\_\+s\+\_\+dns\+\_\+found} (const char $\ast$name, struct ip\+\_\+addr $\ast$ipaddr, void $\ast$arg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_async_client_a8c8eeb889e217aeb824f1311c45b90c1}\label{class_async_client_a8c8eeb889e217aeb824f1311c45b90c1}} 
+\mbox{\hyperlink{class_async_client}{Async\+Client}} $\ast$ {\bfseries prev}
+\item 
+\mbox{\Hypertarget{class_async_client_a2a377cf161c666f0a7fa56fa51a90425}\label{class_async_client_a2a377cf161c666f0a7fa56fa51a90425}} 
+\mbox{\hyperlink{class_async_client}{Async\+Client}} $\ast$ {\bfseries next}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_async_client_a98ff872bc84919f006f3bb8a249ed36d}\label{class_async_client_a98ff872bc84919f006f3bb8a249ed36d}} 
+int8\+\_\+t {\bfseries \+\_\+close} ()
+\item 
+\mbox{\Hypertarget{class_async_client_aff6a2fbf261b25e1fcd35c11cce348a5}\label{class_async_client_aff6a2fbf261b25e1fcd35c11cce348a5}} 
+void {\bfseries \+\_\+free\+\_\+closed\+\_\+slot} ()
+\item 
+\mbox{\Hypertarget{class_async_client_a4d6eb1e540810162c0252db4def943d0}\label{class_async_client_a4d6eb1e540810162c0252db4def943d0}} 
+void {\bfseries \+\_\+allocate\+\_\+closed\+\_\+slot} ()
+\item 
+\mbox{\Hypertarget{class_async_client_acb29f3b9655c128e63eb6312674ad927}\label{class_async_client_acb29f3b9655c128e63eb6312674ad927}} 
+int8\+\_\+t {\bfseries \+\_\+connected} (void $\ast$pcb, int8\+\_\+t err)
+\item 
+\mbox{\Hypertarget{class_async_client_a5145b1cfe1a49ba9a066eee404013835}\label{class_async_client_a5145b1cfe1a49ba9a066eee404013835}} 
+void {\bfseries \+\_\+error} (int8\+\_\+t err)
+\item 
+\mbox{\Hypertarget{class_async_client_a383d1cb7d684d328362caa5eafc92ca2}\label{class_async_client_a383d1cb7d684d328362caa5eafc92ca2}} 
+int8\+\_\+t {\bfseries \+\_\+poll} (tcp\+\_\+pcb $\ast$pcb)
+\item 
+\mbox{\Hypertarget{class_async_client_a6a6efff5757dd06483709456e2f637b4}\label{class_async_client_a6a6efff5757dd06483709456e2f637b4}} 
+int8\+\_\+t {\bfseries \+\_\+sent} (tcp\+\_\+pcb $\ast$pcb, uint16\+\_\+t len)
+\item 
+\mbox{\Hypertarget{class_async_client_afe295b6c577021c8946eb266ac41df51}\label{class_async_client_afe295b6c577021c8946eb266ac41df51}} 
+int8\+\_\+t {\bfseries \+\_\+fin} (tcp\+\_\+pcb $\ast$pcb, int8\+\_\+t err)
+\item 
+\mbox{\Hypertarget{class_async_client_a32dfd5b9ec97903e2f59871f17b85ff4}\label{class_async_client_a32dfd5b9ec97903e2f59871f17b85ff4}} 
+int8\+\_\+t {\bfseries \+\_\+lwip\+\_\+fin} (tcp\+\_\+pcb $\ast$pcb, int8\+\_\+t err)
+\item 
+\mbox{\Hypertarget{class_async_client_a19dc40652b5b003288e10529ee169b65}\label{class_async_client_a19dc40652b5b003288e10529ee169b65}} 
+void {\bfseries \+\_\+dns\+\_\+found} (struct ip\+\_\+addr $\ast$ipaddr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_async_client_afb197f23760b7361ece919c98a66cd05}\label{class_async_client_afb197f23760b7361ece919c98a66cd05}} 
+tcp\+\_\+pcb $\ast$ {\bfseries \+\_\+pcb}
+\item 
+\mbox{\Hypertarget{class_async_client_ad6ab182ed4c436a4289615a4977dcd2e}\label{class_async_client_ad6ab182ed4c436a4289615a4977dcd2e}} 
+int8\+\_\+t {\bfseries \+\_\+closed\+\_\+slot}
+\item 
+\mbox{\Hypertarget{class_async_client_a21f79eb8cbad160d67d4a25181fce6d1}\label{class_async_client_a21f79eb8cbad160d67d4a25181fce6d1}} 
+Ac\+Connect\+Handler {\bfseries \+\_\+connect\+\_\+cb}
+\item 
+\mbox{\Hypertarget{class_async_client_ad596e49555af275c882f49f7fee768fc}\label{class_async_client_ad596e49555af275c882f49f7fee768fc}} 
+void $\ast$ {\bfseries \+\_\+connect\+\_\+cb\+\_\+arg}
+\item 
+\mbox{\Hypertarget{class_async_client_ab1c9d2f910cb4badb2dca219c833a2d1}\label{class_async_client_ab1c9d2f910cb4badb2dca219c833a2d1}} 
+Ac\+Connect\+Handler {\bfseries \+\_\+discard\+\_\+cb}
+\item 
+\mbox{\Hypertarget{class_async_client_a5f7010d8fedec5d4e67fb8901c6f65d1}\label{class_async_client_a5f7010d8fedec5d4e67fb8901c6f65d1}} 
+void $\ast$ {\bfseries \+\_\+discard\+\_\+cb\+\_\+arg}
+\item 
+\mbox{\Hypertarget{class_async_client_a37066beb89ab68e6b97ee17592b97a6f}\label{class_async_client_a37066beb89ab68e6b97ee17592b97a6f}} 
+Ac\+Ack\+Handler {\bfseries \+\_\+sent\+\_\+cb}
+\item 
+\mbox{\Hypertarget{class_async_client_adf5e869bf5a0604d6da11263d1a6d4ae}\label{class_async_client_adf5e869bf5a0604d6da11263d1a6d4ae}} 
+void $\ast$ {\bfseries \+\_\+sent\+\_\+cb\+\_\+arg}
+\item 
+\mbox{\Hypertarget{class_async_client_a2d9d30db9aede0f7200458da3c8ddc35}\label{class_async_client_a2d9d30db9aede0f7200458da3c8ddc35}} 
+Ac\+Error\+Handler {\bfseries \+\_\+error\+\_\+cb}
+\item 
+\mbox{\Hypertarget{class_async_client_a5f17f391d6368a395c0185d9efbd19d3}\label{class_async_client_a5f17f391d6368a395c0185d9efbd19d3}} 
+void $\ast$ {\bfseries \+\_\+error\+\_\+cb\+\_\+arg}
+\item 
+\mbox{\Hypertarget{class_async_client_a048377b23ef787606b594fccb530ad3f}\label{class_async_client_a048377b23ef787606b594fccb530ad3f}} 
+Ac\+Data\+Handler {\bfseries \+\_\+recv\+\_\+cb}
+\item 
+\mbox{\Hypertarget{class_async_client_a4a9eb030b33b00c0102cff237c16d0e2}\label{class_async_client_a4a9eb030b33b00c0102cff237c16d0e2}} 
+void $\ast$ {\bfseries \+\_\+recv\+\_\+cb\+\_\+arg}
+\item 
+\mbox{\Hypertarget{class_async_client_a32da5817eb4114e4fcbbe98e05422b85}\label{class_async_client_a32da5817eb4114e4fcbbe98e05422b85}} 
+Ac\+Packet\+Handler {\bfseries \+\_\+pb\+\_\+cb}
+\item 
+\mbox{\Hypertarget{class_async_client_a46af595d6f0dbef6446b0f4fdf22a729}\label{class_async_client_a46af595d6f0dbef6446b0f4fdf22a729}} 
+void $\ast$ {\bfseries \+\_\+pb\+\_\+cb\+\_\+arg}
+\item 
+\mbox{\Hypertarget{class_async_client_af5b41c763e37deb83340f202db10080e}\label{class_async_client_af5b41c763e37deb83340f202db10080e}} 
+Ac\+Timeout\+Handler {\bfseries \+\_\+timeout\+\_\+cb}
+\item 
+\mbox{\Hypertarget{class_async_client_ac76110f5693f880bc5925b5a86652f32}\label{class_async_client_ac76110f5693f880bc5925b5a86652f32}} 
+void $\ast$ {\bfseries \+\_\+timeout\+\_\+cb\+\_\+arg}
+\item 
+\mbox{\Hypertarget{class_async_client_a739a9877eb39f243dab2b868dbb313b4}\label{class_async_client_a739a9877eb39f243dab2b868dbb313b4}} 
+Ac\+Connect\+Handler {\bfseries \+\_\+poll\+\_\+cb}
+\item 
+\mbox{\Hypertarget{class_async_client_a54071d6420853ed73089c6238c9b7f4f}\label{class_async_client_a54071d6420853ed73089c6238c9b7f4f}} 
+void $\ast$ {\bfseries \+\_\+poll\+\_\+cb\+\_\+arg}
+\item 
+\mbox{\Hypertarget{class_async_client_a84ae7f4d297ca3f0f12a707b31ed3edc}\label{class_async_client_a84ae7f4d297ca3f0f12a707b31ed3edc}} 
+bool {\bfseries \+\_\+pcb\+\_\+busy}
+\item 
+\mbox{\Hypertarget{class_async_client_aee3438479621185d61ced43e25bba0d5}\label{class_async_client_aee3438479621185d61ced43e25bba0d5}} 
+uint32\+\_\+t {\bfseries \+\_\+pcb\+\_\+sent\+\_\+at}
+\item 
+\mbox{\Hypertarget{class_async_client_a376a167919517dcac702da611730c4ba}\label{class_async_client_a376a167919517dcac702da611730c4ba}} 
+bool {\bfseries \+\_\+ack\+\_\+pcb}
+\item 
+\mbox{\Hypertarget{class_async_client_afb58d9f5eb6ce206080f9b67dcadbe7f}\label{class_async_client_afb58d9f5eb6ce206080f9b67dcadbe7f}} 
+uint32\+\_\+t {\bfseries \+\_\+rx\+\_\+ack\+\_\+len}
+\item 
+\mbox{\Hypertarget{class_async_client_a746737c48b882eaa0d954814da61bdeb}\label{class_async_client_a746737c48b882eaa0d954814da61bdeb}} 
+uint32\+\_\+t {\bfseries \+\_\+rx\+\_\+last\+\_\+packet}
+\item 
+\mbox{\Hypertarget{class_async_client_a81ef529b2d05a7e4d4bbb4f3c71f5221}\label{class_async_client_a81ef529b2d05a7e4d4bbb4f3c71f5221}} 
+uint32\+\_\+t {\bfseries \+\_\+rx\+\_\+since\+\_\+timeout}
+\item 
+\mbox{\Hypertarget{class_async_client_ac6f181164f45a29df736acc5f3f6ad86}\label{class_async_client_ac6f181164f45a29df736acc5f3f6ad86}} 
+uint32\+\_\+t {\bfseries \+\_\+ack\+\_\+timeout}
+\item 
+\mbox{\Hypertarget{class_async_client_a61f5eecc113f47fb55690acaf0982b5e}\label{class_async_client_a61f5eecc113f47fb55690acaf0982b5e}} 
+uint16\+\_\+t {\bfseries \+\_\+connect\+\_\+port}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+Async\+TCP-\/master/src/Async\+TCP.\+h\item 
+lib/\+Async\+TCP-\/master/src/Async\+TCP.\+cpp\end{DoxyCompactItemize}

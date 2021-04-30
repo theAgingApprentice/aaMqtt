@@ -81,33 +81,33 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac8db96cc2432919e7fd4d39f2dc93ecd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#ac8db96cc2432919e7fd4d39f2dc93ecd">connect</a> (IPAddress address, const char *uniqueName)</td></tr>
-<tr class="memdesc:ac8db96cc2432919e7fd4d39f2dc93ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to MQTT broker.  <a href="classaa_mqtt.html#ac8db96cc2432919e7fd4d39f2dc93ecd">More...</a><br /></td></tr>
-<tr class="separator:ac8db96cc2432919e7fd4d39f2dc93ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47031fdc438dc4adc12f5a358e12973f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#a47031fdc438dc4adc12f5a358e12973f">onMqttConnect</a> (bool sessionPresent)</td></tr>
-<tr class="memdesc:a47031fdc438dc4adc12f5a358e12973f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for connecting to the broker.  <a href="classaa_mqtt.html#a47031fdc438dc4adc12f5a358e12973f">More...</a><br /></td></tr>
-<tr class="separator:a47031fdc438dc4adc12f5a358e12973f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c81ac79826ee262735b3d25dc382eac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#a1c81ac79826ee262735b3d25dc382eac">onMqttDisconnect</a> (AsyncMqttClientDisconnectReason reason)</td></tr>
-<tr class="memdesc:a1c81ac79826ee262735b3d25dc382eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for disconnecting from the broker.  <a href="classaa_mqtt.html#a1c81ac79826ee262735b3d25dc382eac">More...</a><br /></td></tr>
-<tr class="separator:a1c81ac79826ee262735b3d25dc382eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b378e761dc885afb5a06ba9511a3a5d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#a9b378e761dc885afb5a06ba9511a3a5d">onMqttSubscribe</a> (uint16_t packetId, uint8_t qos)</td></tr>
-<tr class="memdesc:a9b378e761dc885afb5a06ba9511a3a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for subscribing to a topic on the broker.  <a href="classaa_mqtt.html#a9b378e761dc885afb5a06ba9511a3a5d">More...</a><br /></td></tr>
-<tr class="separator:a9b378e761dc885afb5a06ba9511a3a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9b40268ff3129e4cc724f9bbd5533f0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#aa9b40268ff3129e4cc724f9bbd5533f0">onMqttUnsubscribe</a> (uint16_t packetId)</td></tr>
-<tr class="memdesc:aa9b40268ff3129e4cc724f9bbd5533f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for subscribing to a topic on the broker.  <a href="classaa_mqtt.html#aa9b40268ff3129e4cc724f9bbd5533f0">More...</a><br /></td></tr>
-<tr class="separator:aa9b40268ff3129e4cc724f9bbd5533f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5434d7d421fe2ad76c8fe39325f28503"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#a5434d7d421fe2ad76c8fe39325f28503">publishMQTT</a> (const char *topic, const char *msg)</td></tr>
-<tr class="memdesc:a5434d7d421fe2ad76c8fe39325f28503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes a message to the MQTT server.  <a href="classaa_mqtt.html#a5434d7d421fe2ad76c8fe39325f28503">More...</a><br /></td></tr>
-<tr class="separator:a5434d7d421fe2ad76c8fe39325f28503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75dbff2495235d44ebca911e7ad86dfd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#a75dbff2495235d44ebca911e7ad86dfd">publishEvent</a> (int evtId, int evtSev, String evtMsg)</td></tr>
-<tr class="memdesc:a75dbff2495235d44ebca911e7ad86dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes an event.  <a href="classaa_mqtt.html#a75dbff2495235d44ebca911e7ad86dfd">More...</a><br /></td></tr>
-<tr class="separator:a75dbff2495235d44ebca911e7ad86dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa615f1596373bf2e69558b9ca5c6b5a3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#aa615f1596373bf2e69558b9ca5c6b5a3">onMqttMessage</a> (char *topic, char *payload, <a class="el" href="struct_async_mqtt_client_message_properties.html">AsyncMqttClientMessageProperties</a> properties, size_t len, size_t index, size_t total)</td></tr>
-<tr class="memdesc:aa615f1596373bf2e69558b9ca5c6b5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for recieving a message from a subscribed topic.  <a href="classaa_mqtt.html#aa615f1596373bf2e69558b9ca5c6b5a3">More...</a><br /></td></tr>
-<tr class="separator:aa615f1596373bf2e69558b9ca5c6b5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3f1827f2ff4c5c05027aace576af3ee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#ac3f1827f2ff4c5c05027aace576af3ee">onMqttPublish</a> (uint16_t packetId)</td></tr>
-<tr class="memdesc:ac3f1827f2ff4c5c05027aace576af3ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for the ACK from a published message.  <a href="classaa_mqtt.html#ac3f1827f2ff4c5c05027aace576af3ee">More...</a><br /></td></tr>
-<tr class="separator:ac3f1827f2ff4c5c05027aace576af3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce99a71ff5d6575dda7b1e60224850c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#a7ce99a71ff5d6575dda7b1e60224850c">connect</a> (IPAddress address, const char *uniqueName)</td></tr>
+<tr class="memdesc:a7ce99a71ff5d6575dda7b1e60224850c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to MQTT broker.  <a href="classaa_mqtt.html#a7ce99a71ff5d6575dda7b1e60224850c">More...</a><br /></td></tr>
+<tr class="separator:a7ce99a71ff5d6575dda7b1e60224850c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac5c0bf0c8b6ab2ba6ee6b6c5c2ad7c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#adac5c0bf0c8b6ab2ba6ee6b6c5c2ad7c">onMqttConnect</a> (bool sessionPresent)</td></tr>
+<tr class="memdesc:adac5c0bf0c8b6ab2ba6ee6b6c5c2ad7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for connecting to the broker.  <a href="classaa_mqtt.html#adac5c0bf0c8b6ab2ba6ee6b6c5c2ad7c">More...</a><br /></td></tr>
+<tr class="separator:adac5c0bf0c8b6ab2ba6ee6b6c5c2ad7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6abfaec4d1b1fbeecb547433e98fa9fc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#a6abfaec4d1b1fbeecb547433e98fa9fc">onMqttDisconnect</a> (AsyncMqttClientDisconnectReason reason)</td></tr>
+<tr class="memdesc:a6abfaec4d1b1fbeecb547433e98fa9fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for disconnecting from the broker.  <a href="classaa_mqtt.html#a6abfaec4d1b1fbeecb547433e98fa9fc">More...</a><br /></td></tr>
+<tr class="separator:a6abfaec4d1b1fbeecb547433e98fa9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c3bfc78093d9d05ffad2a86f06ea68"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#a90c3bfc78093d9d05ffad2a86f06ea68">onMqttSubscribe</a> (uint16_t packetId, uint8_t qos)</td></tr>
+<tr class="memdesc:a90c3bfc78093d9d05ffad2a86f06ea68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for subscribing to a topic on the broker.  <a href="classaa_mqtt.html#a90c3bfc78093d9d05ffad2a86f06ea68">More...</a><br /></td></tr>
+<tr class="separator:a90c3bfc78093d9d05ffad2a86f06ea68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be714946ce7d4ca63f4336778ada139"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#a1be714946ce7d4ca63f4336778ada139">onMqttUnsubscribe</a> (uint16_t packetId)</td></tr>
+<tr class="memdesc:a1be714946ce7d4ca63f4336778ada139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for subscribing to a topic on the broker.  <a href="classaa_mqtt.html#a1be714946ce7d4ca63f4336778ada139">More...</a><br /></td></tr>
+<tr class="separator:a1be714946ce7d4ca63f4336778ada139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a734c75270b275982cc4bdc79da9faafb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#a734c75270b275982cc4bdc79da9faafb">publishMQTT</a> (const char *topic, const char *msg)</td></tr>
+<tr class="memdesc:a734c75270b275982cc4bdc79da9faafb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes a message to the MQTT server.  <a href="classaa_mqtt.html#a734c75270b275982cc4bdc79da9faafb">More...</a><br /></td></tr>
+<tr class="separator:a734c75270b275982cc4bdc79da9faafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99783465de2e21a13eeadbb5e39b7b8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#ab99783465de2e21a13eeadbb5e39b7b8">publishEvent</a> (int evtId, int evtSev, String evtMsg)</td></tr>
+<tr class="memdesc:ab99783465de2e21a13eeadbb5e39b7b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes an event.  <a href="classaa_mqtt.html#ab99783465de2e21a13eeadbb5e39b7b8">More...</a><br /></td></tr>
+<tr class="separator:ab99783465de2e21a13eeadbb5e39b7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada4234e578ec002c58e86db16b9162d8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#ada4234e578ec002c58e86db16b9162d8">onMqttMessage</a> (char *topic, char *payload, <a class="el" href="struct_async_mqtt_client_message_properties.html">AsyncMqttClientMessageProperties</a> properties, size_t len, size_t index, size_t total)</td></tr>
+<tr class="memdesc:ada4234e578ec002c58e86db16b9162d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for recieving a message from a subscribed topic.  <a href="classaa_mqtt.html#ada4234e578ec002c58e86db16b9162d8">More...</a><br /></td></tr>
+<tr class="separator:ada4234e578ec002c58e86db16b9162d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235eb322300f2c9616754ba202962ad0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaa_mqtt.html#a235eb322300f2c9616754ba202962ad0">onMqttPublish</a> (uint16_t packetId)</td></tr>
+<tr class="memdesc:a235eb322300f2c9616754ba202962ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for the ACK from a published message.  <a href="classaa_mqtt.html#a235eb322300f2c9616754ba202962ad0">More...</a><br /></td></tr>
+<tr class="separator:a235eb322300f2c9616754ba202962ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8fe0df533de2e25f1dfb2f0c8e626f7d"></a>
@@ -124,7 +124,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<h1><a class="anchor" id="autotoc_md60"></a>
+<h1><a class="anchor" id="autotoc_md98"></a>
 @class Write variables to flash memory.</h1>
 
 </div>
@@ -143,14 +143,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<h1><a class="anchor" id="autotoc_md61"></a>
+<h1><a class="anchor" id="autotoc_md99"></a>
 @brief This is the destructor for this class.</h1>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac8db96cc2432919e7fd4d39f2dc93ecd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8db96cc2432919e7fd4d39f2dc93ecd">&#9670;&nbsp;</a></span>connect()</h2>
+<a id="a7ce99a71ff5d6575dda7b1e60224850c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce99a71ff5d6575dda7b1e60224850c">&#9670;&nbsp;</a></span>connect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +159,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void aaMqtt::connect </td>
+          <td class="memname">void aaMqtt::connect </td>
           <td>(</td>
           <td class="paramtype">IPAddress&#160;</td>
           <td class="paramname"><em>address</em>, </td>
@@ -168,7 +168,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>uniqueName</em>&#160;</td>
+          <td class="paramname"><em>uName</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -190,13 +190,13 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<h1><a class="anchor" id="autotoc_md62"></a>
+<h1><a class="anchor" id="autotoc_md100"></a>
 @param char* Unique name used to prefix all topic trees.</h1>
 
 </div>
 </div>
-<a id="a47031fdc438dc4adc12f5a358e12973f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47031fdc438dc4adc12f5a358e12973f">&#9670;&nbsp;</a></span>onMqttConnect()</h2>
+<a id="adac5c0bf0c8b6ab2ba6ee6b6c5c2ad7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adac5c0bf0c8b6ab2ba6ee6b6c5c2ad7c">&#9670;&nbsp;</a></span>onMqttConnect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,7 +205,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void aaMqtt::onMqttConnect </td>
+          <td class="memname">void aaMqtt::onMqttConnect </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>sessionPresent</em></td><td>)</td>
@@ -220,13 +220,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Event handler for connecting to the broker. </p>
-<h1><a class="anchor" id="autotoc_md63"></a>
+<h1><a class="anchor" id="autotoc_md101"></a>
 @param bool  Check to see if there are messages queued already.</h1>
 
 </div>
 </div>
-<a id="a1c81ac79826ee262735b3d25dc382eac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c81ac79826ee262735b3d25dc382eac">&#9670;&nbsp;</a></span>onMqttDisconnect()</h2>
+<a id="a6abfaec4d1b1fbeecb547433e98fa9fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6abfaec4d1b1fbeecb547433e98fa9fc">&#9670;&nbsp;</a></span>onMqttDisconnect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +235,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void aaMqtt::onMqttDisconnect </td>
+          <td class="memname">void aaMqtt::onMqttDisconnect </td>
           <td>(</td>
           <td class="paramtype">AsyncMqttClientDisconnectReason&#160;</td>
           <td class="paramname"><em>reason</em></td><td>)</td>
@@ -250,13 +250,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Event handler for disconnecting from the broker. </p>
-<h1><a class="anchor" id="autotoc_md64"></a>
+<h1><a class="anchor" id="autotoc_md102"></a>
 @param AsyncMqttClientDisconnectReason Reason code.</h1>
 
 </div>
 </div>
-<a id="aa615f1596373bf2e69558b9ca5c6b5a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa615f1596373bf2e69558b9ca5c6b5a3">&#9670;&nbsp;</a></span>onMqttMessage()</h2>
+<a id="ada4234e578ec002c58e86db16b9162d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4234e578ec002c58e86db16b9162d8">&#9670;&nbsp;</a></span>onMqttMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +265,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void aaMqtt::onMqttMessage </td>
+          <td class="memname">void aaMqtt::onMqttMessage </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>topic</em>, </td>
@@ -325,13 +325,13 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<h1><a class="anchor" id="autotoc_md69"></a>
+<h1><a class="anchor" id="autotoc_md110"></a>
 @param size_t Total length of message.</h1>
 
 </div>
 </div>
-<a id="ac3f1827f2ff4c5c05027aace576af3ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3f1827f2ff4c5c05027aace576af3ee">&#9670;&nbsp;</a></span>onMqttPublish()</h2>
+<a id="a235eb322300f2c9616754ba202962ad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a235eb322300f2c9616754ba202962ad0">&#9670;&nbsp;</a></span>onMqttPublish()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,7 +340,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void aaMqtt::onMqttPublish </td>
+          <td class="memname">void aaMqtt::onMqttPublish </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>packetId</em></td><td>)</td>
@@ -355,13 +355,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Event handler for the ACK from a published message. </p>
-<h1><a class="anchor" id="autotoc_md70"></a>
+<h1><a class="anchor" id="autotoc_md111"></a>
 @param uint16_t Packet Id of message that was published.</h1>
 
 </div>
 </div>
-<a id="a9b378e761dc885afb5a06ba9511a3a5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b378e761dc885afb5a06ba9511a3a5d">&#9670;&nbsp;</a></span>onMqttSubscribe()</h2>
+<a id="a90c3bfc78093d9d05ffad2a86f06ea68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c3bfc78093d9d05ffad2a86f06ea68">&#9670;&nbsp;</a></span>onMqttSubscribe()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,7 +370,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void aaMqtt::onMqttSubscribe </td>
+          <td class="memname">void aaMqtt::onMqttSubscribe </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>packetId</em>, </td>
@@ -398,16 +398,39 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uint16_t</td><td>PackID that matches the subscription request. </td></tr>
+    <tr><td class="paramname">uint8_t</td><td>SUBACK return code</td></tr>
   </table>
   </dd>
 </dl>
-<h1><a class="anchor" id="autotoc_md65"></a>
-@param uint8_t Qulaity Of Service level for this subscription.</h1>
+<h1><a class="anchor" id="autotoc_md103"></a>
+Suback Message</h1>
+<p>To confirm each subscription, the broker sends a SUBACK acknowledgement message to the client. This message contains the packet identifier of the original Subscribe message (to clearly identify the message) and a list of return codes.</p>
+<h2><a class="anchor" id="autotoc_md104"></a>
+Packet Identifier</h2>
+<p>The packet identifier is a unique identifier used to identify a message. It is the same as in the SUBSCRIBE message.</p>
+<h2><a class="anchor" id="autotoc_md105"></a>
+Return Code</h2>
+<p>The broker sends one return code for each topic/QoS-pair that it receives in the SUBSCRIBE message. For example, if the SUBSCRIBE message has five subscriptions, the SUBACK message contains five return codes. The return code acknowledges each topic and shows the QoS level that is granted by the broker. If the broker refuses a subscription, the SUBACK message conains a failure return code for that specific topic. For example, if the client has insufficient permission to subscribe to the topic or the topic is malformed.</p>
+<h1><a class="anchor" id="autotoc_md106"></a>
+Table of SUBACK return codes</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">Return Code   </th><th class="markdownTableHeadLeft">Return Code Response    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">0   </td><td class="markdownTableBodyLeft">Success - Maximum QoS 0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">1   </td><td class="markdownTableBodyLeft">Success - Maximum QoS 1    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">2   </td><td class="markdownTableBodyLeft">Success - Maximum QoS 2    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">128   </td><td class="markdownTableBodyLeft">Failure   </td></tr>
+</table>
+<p>=========================================================================== </p>
 
 </div>
 </div>
-<a id="aa9b40268ff3129e4cc724f9bbd5533f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9b40268ff3129e4cc724f9bbd5533f0">&#9670;&nbsp;</a></span>onMqttUnsubscribe()</h2>
+<a id="a1be714946ce7d4ca63f4336778ada139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be714946ce7d4ca63f4336778ada139">&#9670;&nbsp;</a></span>onMqttUnsubscribe()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,7 +439,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void aaMqtt::onMqttUnsubscribe </td>
+          <td class="memname">void aaMqtt::onMqttUnsubscribe </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>packetId</em></td><td>)</td>
@@ -431,13 +454,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Event handler for subscribing to a topic on the broker. </p>
-<h1><a class="anchor" id="autotoc_md66"></a>
+<h1><a class="anchor" id="autotoc_md107"></a>
 @param uint16_t PackID that matches the unsubscribe request.</h1>
 
 </div>
 </div>
-<a id="a75dbff2495235d44ebca911e7ad86dfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75dbff2495235d44ebca911e7ad86dfd">&#9670;&nbsp;</a></span>publishEvent()</h2>
+<a id="ab99783465de2e21a13eeadbb5e39b7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab99783465de2e21a13eeadbb5e39b7b8">&#9670;&nbsp;</a></span>publishEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -446,7 +469,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void aaMqtt::publishEvent </td>
+          <td class="memname">void aaMqtt::publishEvent </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>evtId</em>, </td>
@@ -484,13 +507,13 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<h1><a class="anchor" id="autotoc_md68"></a>
+<h1><a class="anchor" id="autotoc_md109"></a>
 @param String Event message.</h1>
 
 </div>
 </div>
-<a id="a5434d7d421fe2ad76c8fe39325f28503"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5434d7d421fe2ad76c8fe39325f28503">&#9670;&nbsp;</a></span>publishMQTT()</h2>
+<a id="a734c75270b275982cc4bdc79da9faafb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a734c75270b275982cc4bdc79da9faafb">&#9670;&nbsp;</a></span>publishMQTT()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -499,7 +522,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool aaMqtt::publishMQTT </td>
+          <td class="memname">bool aaMqtt::publishMQTT </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>topic</em>, </td>
@@ -530,8 +553,8 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<h1><a class="anchor" id="autotoc_md67"></a>
-@param char* Message  to publish.</h1>
+<h1><a class="anchor" id="autotoc_md108"></a>
+@param char* Message to publish.</h1>
 
 </div>
 </div>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7eaamqtt_33',['~aaMqtt',['../classaa_mqtt.html#a87e8a4db1a43fbd5d71b77a56a15b7e0',1,'aaMqtt']]]
+  ['tcp_5fapi_5fcall_5ft_43',['tcp_api_call_t',['../structtcp__api__call__t.html',1,'']]],
+  ['troubleshooting_44',['Troubleshooting',['../md_lib_async_mqtt_client_master_docs_5___troubleshooting.html',1,'']]]
 ];

@@ -1,0 +1,74 @@
+\hypertarget{class_async_server}{}\doxysection{Async\+Server Class Reference}
+\label{class_async_server}\index{AsyncServer@{AsyncServer}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_async_server_aa6357ae6df41ef23d53d2a73759f5016}\label{class_async_server_aa6357ae6df41ef23d53d2a73759f5016}} 
+{\bfseries Async\+Server} (IPAddress addr, uint16\+\_\+t port)
+\item 
+\mbox{\Hypertarget{class_async_server_a062f1eb5125c8f4dcae698ba3ad09b0d}\label{class_async_server_a062f1eb5125c8f4dcae698ba3ad09b0d}} 
+{\bfseries Async\+Server} (uint16\+\_\+t port)
+\item 
+\mbox{\Hypertarget{class_async_server_aae0774f2e5eb1678725510d68d476c1e}\label{class_async_server_aae0774f2e5eb1678725510d68d476c1e}} 
+void {\bfseries on\+Client} (Ac\+Connect\+Handler cb, void $\ast$arg)
+\item 
+\mbox{\Hypertarget{class_async_server_a7e9ce55e4e1d0fab5531bac98ebfb3f9}\label{class_async_server_a7e9ce55e4e1d0fab5531bac98ebfb3f9}} 
+void {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{class_async_server_ab4e3997502c28dca6ca0703fea8b2122}\label{class_async_server_ab4e3997502c28dca6ca0703fea8b2122}} 
+void {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{class_async_server_a551c051eee1e69d1591fd8ef6f46c16a}\label{class_async_server_a551c051eee1e69d1591fd8ef6f46c16a}} 
+void {\bfseries set\+No\+Delay} (bool nodelay)
+\item 
+\mbox{\Hypertarget{class_async_server_a1da328a590c4e3dd2df908e8d128d122}\label{class_async_server_a1da328a590c4e3dd2df908e8d128d122}} 
+bool {\bfseries get\+No\+Delay} ()
+\item 
+\mbox{\Hypertarget{class_async_server_aa385a4bb09496d5c9026d680a0798e04}\label{class_async_server_aa385a4bb09496d5c9026d680a0798e04}} 
+uint8\+\_\+t {\bfseries status} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_async_server_a9cfd997e84bd4ba394f3225863536d5e}\label{class_async_server_a9cfd997e84bd4ba394f3225863536d5e}} 
+static int8\+\_\+t {\bfseries \+\_\+s\+\_\+accept} (void $\ast$arg, tcp\+\_\+pcb $\ast$newpcb, int8\+\_\+t err)
+\item 
+\mbox{\Hypertarget{class_async_server_a68b4c50c0bf8f5109b9981a87d5d34e5}\label{class_async_server_a68b4c50c0bf8f5109b9981a87d5d34e5}} 
+static int8\+\_\+t {\bfseries \+\_\+s\+\_\+accepted} (void $\ast$arg, \mbox{\hyperlink{class_async_client}{Async\+Client}} $\ast$client)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_async_server_a51e55999b79eec50bd68e899b8ddd4e4}\label{class_async_server_a51e55999b79eec50bd68e899b8ddd4e4}} 
+int8\+\_\+t {\bfseries \+\_\+accept} (tcp\+\_\+pcb $\ast$newpcb, int8\+\_\+t err)
+\item 
+\mbox{\Hypertarget{class_async_server_ae12ee87206611e09ed5e644c6baf1c96}\label{class_async_server_ae12ee87206611e09ed5e644c6baf1c96}} 
+int8\+\_\+t {\bfseries \+\_\+accepted} (\mbox{\hyperlink{class_async_client}{Async\+Client}} $\ast$client)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_async_server_a8ab204dce6053e206b06585e5695f1d8}\label{class_async_server_a8ab204dce6053e206b06585e5695f1d8}} 
+uint16\+\_\+t {\bfseries \+\_\+port}
+\item 
+\mbox{\Hypertarget{class_async_server_a5871b4b37c83f8e046130e543a0867be}\label{class_async_server_a5871b4b37c83f8e046130e543a0867be}} 
+IPAddress {\bfseries \+\_\+addr}
+\item 
+\mbox{\Hypertarget{class_async_server_ad9751335ff478961c3eb1f476f48f3fe}\label{class_async_server_ad9751335ff478961c3eb1f476f48f3fe}} 
+bool {\bfseries \+\_\+no\+Delay}
+\item 
+\mbox{\Hypertarget{class_async_server_a779d4c20f342ab7e0d08a9de27c5d0df}\label{class_async_server_a779d4c20f342ab7e0d08a9de27c5d0df}} 
+tcp\+\_\+pcb $\ast$ {\bfseries \+\_\+pcb}
+\item 
+\mbox{\Hypertarget{class_async_server_ace661aecb40ce2bf643b44b7ffcd5436}\label{class_async_server_ace661aecb40ce2bf643b44b7ffcd5436}} 
+Ac\+Connect\+Handler {\bfseries \+\_\+connect\+\_\+cb}
+\item 
+\mbox{\Hypertarget{class_async_server_a60008b96eb6407d2376940d9dbcd48a3}\label{class_async_server_a60008b96eb6407d2376940d9dbcd48a3}} 
+void $\ast$ {\bfseries \+\_\+connect\+\_\+cb\+\_\+arg}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+Async\+TCP-\/master/src/Async\+TCP.\+h\item 
+lib/\+Async\+TCP-\/master/src/Async\+TCP.\+cpp\end{DoxyCompactItemize}

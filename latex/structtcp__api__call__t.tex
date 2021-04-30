@@ -1,0 +1,45 @@
+\hypertarget{structtcp__api__call__t}{}\doxysection{tcp\+\_\+api\+\_\+call\+\_\+t Struct Reference}
+\label{structtcp__api__call__t}\index{tcp\_api\_call\_t@{tcp\_api\_call\_t}}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtcp__api__call__t_a12aae5fee9917830be9c4dfbe8660410}\label{structtcp__api__call__t_a12aae5fee9917830be9c4dfbe8660410}} 
+struct tcpip\+\_\+api\+\_\+call\+\_\+data {\bfseries call}
+\item 
+\mbox{\Hypertarget{structtcp__api__call__t_ace8d457b4f1f55c58b4d0053ca71ffd0}\label{structtcp__api__call__t_ace8d457b4f1f55c58b4d0053ca71ffd0}} 
+tcp\+\_\+pcb $\ast$ {\bfseries pcb}
+\item 
+\mbox{\Hypertarget{structtcp__api__call__t_a5a375eb906267dd6f04fcfda792bd8c2}\label{structtcp__api__call__t_a5a375eb906267dd6f04fcfda792bd8c2}} 
+int8\+\_\+t {\bfseries closed\+\_\+slot}
+\item 
+\mbox{\Hypertarget{structtcp__api__call__t_ae2c3567ef9717c5ac17044ed7ef5c408}\label{structtcp__api__call__t_ae2c3567ef9717c5ac17044ed7ef5c408}} 
+int8\+\_\+t {\bfseries err}
+\item 
+\mbox{\Hypertarget{structtcp__api__call__t_aaf6c32fb44967ee5c379fac2f55559ee}\label{structtcp__api__call__t_aaf6c32fb44967ee5c379fac2f55559ee}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>const char $\ast$ {\bfseries data}\\
+\>\>size\_t {\bfseries size}\\
+\>\>uint8\_t {\bfseries apiflags}\\
+\>\} {\bfseries write}\\
+\>size\_t {\bfseries received}\\
+\>struct \{\\
+\>\>ip\_addr\_t $\ast$ {\bfseries addr}\\
+\>\>uint16\_t {\bfseries port}\\
+\>\>tcp\_connected\_fn {\bfseries cb}\\
+\>\} {\bfseries connect}\\
+\>struct \{\\
+\>\>ip\_addr\_t $\ast$ {\bfseries addr}\\
+\>\>uint16\_t {\bfseries port}\\
+\>\} {\bfseries bind}\\
+\>uint8\_t {\bfseries backlog}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+Async\+TCP-\/master/src/Async\+TCP.\+cpp\end{DoxyCompactItemize}

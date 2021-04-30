@@ -5,15 +5,15 @@ To use \mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}}, you need
 \item An ESP8266
 \item The Arduino IDE for ESP8266 (version 2.\+2.\+0 minimum)
 \item Basic knowledge of the Arduino environment (upload a sketch, import libraries, ...)
-\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_1___getting_started_autotoc_md5}{}\doxysection{Installing Async\+Mqtt\+Client}\label{md_lib_async_mqtt_client_master_docs_1___getting_started_autotoc_md5}
-There are two ways to install \mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}}.\hypertarget{md_lib_async_mqtt_client_master_docs_1___getting_started_autotoc_md6}{}\doxysubsection{1a. For the Arduino IDE}\label{md_lib_async_mqtt_client_master_docs_1___getting_started_autotoc_md6}
+\end{DoxyItemize}\hypertarget{md_lib_async_mqtt_client_master_docs_1___getting_started_autotoc_md35}{}\doxysection{Installing Async\+Mqtt\+Client}\label{md_lib_async_mqtt_client_master_docs_1___getting_started_autotoc_md35}
+There are two ways to install \mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}}.\hypertarget{md_lib_async_mqtt_client_master_docs_1___getting_started_autotoc_md36}{}\doxysubsection{1a. For the Arduino IDE}\label{md_lib_async_mqtt_client_master_docs_1___getting_started_autotoc_md36}
 
 \begin{DoxyEnumerate}
 \item Download the \href{https://github.com/marvinroger/async-mqtt-client/releases/latest}{\texttt{ corresponding release}}
 \item Load the {\ttfamily .zip} with {\bfseries{Sketch → Include Library → Add .ZIP Library}}
 \end{DoxyEnumerate}
 
-\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} has 1 dependency\+: \href{https://github.com/me-no-dev/ESPAsyncTCP}{\texttt{ ESPAsync\+TCP}}. Download the \href{https://github.com/me-no-dev/ESPAsyncTCP/archive/master.zip}{\texttt{ .zip}} and install it with the same method as above.\hypertarget{md_lib_async_mqtt_client_master_docs_1___getting_started_autotoc_md7}{}\doxysection{Fully-\/featured sketch}\label{md_lib_async_mqtt_client_master_docs_1___getting_started_autotoc_md7}
+\mbox{\hyperlink{class_async_mqtt_client}{Async\+Mqtt\+Client}} has 1 dependency\+: \href{https://github.com/me-no-dev/ESPAsyncTCP}{\texttt{ ESPAsync\+TCP}}. Download the \href{https://github.com/me-no-dev/ESPAsyncTCP/archive/master.zip}{\texttt{ .zip}} and install it with the same method as above.\hypertarget{md_lib_async_mqtt_client_master_docs_1___getting_started_autotoc_md37}{}\doxysection{Fully-\/featured sketch}\label{md_lib_async_mqtt_client_master_docs_1___getting_started_autotoc_md37}
 See \href{../examples/FullyFeatured-ESP8266/FullyFeatured-ESP8266.ino}{\texttt{ examples/\+Fully\+Featured-\/\+ESP8266.\+ino}}
 
 $\ast$$\ast$\uline{Very important\+:} As a rule of thumb, never use blocking functions in the callbacks (don\textquotesingle{}t use {\ttfamily delay()} or {\ttfamily yield()}).$\ast$$\ast$ Otherwise, you may very probably experience unexpected behaviors.
