@@ -44,7 +44,9 @@
 /**
  * Define global objects.
  * =================================================================================*/
-aaMqtt myRefVar; // Explain what this object reference is for. 
+aaMqtt mqtt; // Explain what this object reference is for. 
+aaNetwork wifi("EXAMPLE"); // Explain what this object reference is for. 
+aaFlash flash; // Non-volatile memory management. 
 
 /**
  * @brief Initialize the serial output with the specified baud rate measured in bits 
@@ -62,10 +64,23 @@ void setupSerial()
  * =================================================================================*/
 void setup()
 {
-   // Declare variables.
+   char uniqueName[HOST_NAME_SIZE]; // Character array that holds unique name. 
+   char *uniqueNamePtr = uniqueName; // Pointer to unique name character array.
+   IPAddress brokerIP(192, 168, 2, 21); // IP address of the MQTT broker.
    setupSerial(); // Set serial baud rate. 
    Serial.println("<setup> Start of setup");
-   // Call stuff here.
+   wifi.connect(); // Connect to a known WiFi network.
+   wifi.getUniqueName(uniqueNamePtr);
+   Serial.print("<setup> Unique name = ");
+   Serial.println(uniqueName);
+   wifi.cfgToConsole();
+   mqtt.connect(brokerIP, uniqueName);
+   bool x = false;
+   while(x == false)
+   {
+      x = mqtt.publishMQTT(HEALTH_MQTT_TOPIC, "This is a test message");
+      delay(1);
+   } //while  
    Serial.println("<setup> End of setup");
 } // setup()
 

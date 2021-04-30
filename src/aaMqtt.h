@@ -9,9 +9,12 @@
  * @section aaMqttIncludes Included libraries.
  ************************************************************************************/
 #include <Arduino.h> // Arduino Core for ESP32. Comes with Platform.io.
+#include <WiFi.h> // Required to connect to WiFi network. Comes with Platform.io.
 #include <AsyncMqttClient.h> // MQTT. https://github.com/marvinroger/async-mqtt-client.
 #include "freertos/FreeRTOS.h" // OS threads. Comes with Platform.io.
 #include "freertos/timers.h" // Software Timers. Comes with Platform.io.
+#include <aaNetwork.h> // Store values that persist past reboot.
+#include <aaFlash.h> // Use Flash memory to store values that persist past reboot.
 
 /************************************************************************************
  * @section mqttDeclareConstants Declare constants. 
