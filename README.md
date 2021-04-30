@@ -16,7 +16,7 @@
 * [Acknowledgements](#Acknowledgements)
 
 ## Overview
-This repository contains an Arduino class that handles subscribing and publishing to an Mqtt broker. This is part of a series of classes made to support a standard set of APIs for experimental robot platforms. This MQTT class uses agingApprentice as the root level of the topic tree. It assumes that your sketch uses the getUniqueName method of the aaNetwork class to create a unique ID for your MCU based on a supplied prefix and the MAC address of the wifi radio. The library automatcally send the unique ID of the MCU to the ```agingApprentice/checkin`` topic so it is possible for an Aging Apprentice console application to track active devices from the broker. 
+This repository contains an Arduino class that handles subscribing and publishing to an Mqtt broker. This is part of a series of classes made to support a standard set of APIs for experimental robot platforms. This MQTT class uses ```agingApprentice``` as the root level of the topic tree. It assumes that your sketch uses the **getUniqueName** method of the **aaNetwork** class to create a unique ID for your MCU based on a supplied prefix and the MAC address of the wifi radio. The library automatcally send the unique ID of the MCU to the ```agingApprentice/checkin``` topic so it is possible for an Aging Apprentice console application to track active devices from the broker. 
 
 ## Dependencies
 This class depends on the following libraries being present on your system. 
